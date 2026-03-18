@@ -42,6 +42,6 @@
       heroImage.addEventListener('load', function() {
         setInterval(() => {
           heroImage.src = "images/attendant.png";
-        }, 100);
+        }, 300);
       });
     }
