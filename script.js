@@ -36,3 +36,12 @@
         });
       });
     })();
+
+    let heroImage = document.querySelector('.hero-image img');
+    if (heroImage) {
+      heroImage.addEventListener('load', function() {
+        setInterval(() => {
+          heroImage.src = "images/attendant.png";
+        }, 100);
+      });
+    }
