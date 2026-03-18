@@ -45,24 +45,29 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-text">
-        <h1>Your Journey,<br>Our Expertise</h1>
-        <p>Experience seamless travel with Luminaries Group. From flight booking to airport assistance, we handle every detail so you can focus on what matters.</p>
-        <div class="hero-buttons">
-          <a class="btn-primary" href="#services">Explore Services</a>
-          <a class="btn-outline" href="https://wa.me/2348110453325">WhatsApp</a>
-        </div>
-        <div class="hero-image">
-          <img src="images/flight-attendant.png"
-             alt="plane background">
-             <div class="overlay"></div>
-        </div>
+  <section class="hero" id="hero">
+
+  <div class="hero-bg"></div>
+  <div class="overlay"></div>
+
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <h1 id="hero-title">
+        Your Journey,<br>Our Expertise
+      </h1>
+
+      <p id="hero-text">
+        Experience seamless travel with Luminaries Group. From flight booking to airport assistance, we handle every detail so you can focus on what matters.
+      </p>
+
+      <div class="hero-buttons" id="hero-buttons">
+        <a class="btn-primary" href="#services">Explore Services</a>
+        <a class="btn-outline" href="https://wa.me/2348110453325">WhatsApp</a>
       </div>
-      
     </div>
-  </section>
+  </div>
+
+</section>
 
   <!-- SERVICES -->
   <section id="services" class="services">
@@ -114,10 +119,10 @@
   <!-- FOOTER -->
   <footer id="contact">
     <div class="container footer-grid">
-      <div>
+      <!-- <div>
         <h3>Luminaries Group</h3>
         <p>Professional flight logistics and airport protocol services.</p>
-      </div>
+      </div> -->
       <div>
         <h4>Services</h4>
         <ul><li>Flight Booking</li><li>Protocol Services</li><li>Meet & Assist</li></ul>
@@ -129,7 +134,7 @@
         <p>luminariesgroupltd@gmail.com</p>
       </div>
     </div>
-    <div class="copyright">© 2026 Luminaries Group Flight Logistics</div>
+    <div class="copyright">© <span>2026</span> Luminaries Group Flight Logistics</div>
   </footer>
 
   <script src="script.js"></script>
