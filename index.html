@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luminaries · flight logistics</title>
+  <!-- Font + Font Awesome 6 -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- STICKY WHATSAPP ICON (replaced call) – link to your WhatsApp -->
+  <a href="https://wa.me/2348110453325" target="_blank" class="sticky-wa" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="36" height="36">
+      <path d="M19.077 4.928C17.191 3.041 14.683 2 12.006 2 6.798 2 2.548 6.193 2.54 11.393c-.003 1.747.456 3.457 1.328 4.985L2.25 21.75l5.4-1.575c1.494.82 3.179 1.255 4.896 1.256h.004c5.199 0 9.454-4.195 9.462-9.396.004-2.51-.971-4.87-2.857-6.757zM12.006 20.237h-.003c-1.52 0-3.01-.41-4.314-1.186l-.31-.185-3.203.934.998-3.122-.201-.321a8.183 8.183 0 0 1-1.36-4.537c.007-4.526 3.688-8.207 8.22-8.207 2.19 0 4.25.855 5.8 2.406 1.548 1.55 2.4 3.61 2.397 5.8-.008 4.523-3.689 8.204-8.214 8.204zm4.503-6.133c-.247-.124-1.46-.72-1.686-.803-.226-.082-.39-.124-.554.124-.165.247-.636.803-.78.967-.143.165-.286.186-.533.062-.888-.414-1.676-.922-2.33-1.52-.175-.16-.333-.334-.486-.514-.26-.304-.497-.627-.705-.965-.124-.2-.013-.308.093-.414.096-.096.21-.226.315-.34.124-.124.165-.206.247-.34.083-.135.042-.248-.021-.382-.062-.135-.554-1.33-.76-1.822-.2-.482-.402-.416-.554-.424-.144-.007-.308-.01-.472-.01-.165 0-.433.062-.66.31-.226.248-.865.846-.865 2.064 0 1.218.886 2.394 1.01 2.56.124.165 1.71 2.614 4.144 3.586.58.23 1.032.37 1.385.474.583.172 1.113.148 1.533.09.468-.064 1.44-.588 1.643-1.156.203-.568.203-1.054.142-1.156-.062-.103-.226-.165-.473-.29z"/>
+    </svg>
+  </a>
+
+  <!-- NAVBAR with clear logo placeholder (img tag) -->
+  <header class="navbar">
+    <div class="container nav-flex">
+      <!-- logo space: explicit IMG tag – replace src with your logo later -->
+      <div class="logo">
+        <img src="images/IMG-20260308-WA0012.jpg"
+             alt="Luminaries Group logo (placeholder)" 
+             style="height:55px; width:auto; border-radius: 50%;">
+        <!-- ↑ replace src="assets/logo.png" with your actual logo -->
+      </div>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#clients">Who We Serve</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Your Journey,<br>Our Expertise</h1>
+        <p>Experience seamless travel with Luminaries Group. From flight booking to airport assistance, we handle every detail so you can focus on what matters.</p>
+        <div class="hero-buttons">
+          <a class="btn-primary" href="#services">Explore Services</a>
+          <a class="btn-outline" href="https://wa.me/2348110453325">WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22800%22%20height%3D%22600%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%232C6E49%22%2F%3E%3Ctext%20x%3D%22230%22%20y%3D%22320%22%20font-family%3D%22Poppins%22%20font-size%3D%2228%22%20fill%3D%22%23ffffff%22%3Eflight%20logistics%3C%2Ftext%3E%3C%2Fsvg%3E"
+             alt="plane background">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-sub">Comprehensive travel solutions tailored to your needs</p>
+      <div class="service-grid">
+        <div class="service-card"><i class="fas fa-plane-departure"></i><h3>Flight Booking</h3><p>Seamless booking across global airlines with instant confirmation.</p></div>
+        <div class="service-card"><i class="fas fa-passport"></i><h3>Airport Protocol</h3><p>Professional airport assistance ensuring smooth and stress-free travel.</p></div>
+        <div class="service-card"><i class="fas fa-handshake"></i><h3>Meet & Assist</h3><p>Dedicated airport companions guiding you through every step.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE SERVE -->
+  <section id="clients" class="clients">
+    <div class="container">
+      <h2 class="section-title">Who We Serve</h2>
+      <div class="client-grid">
+        <div class="client-card"><i class="fas fa-briefcase"></i><h3>Business Executives</h3><p>Premium travel solutions with priority support.</p></div>
+        <div class="client-card"><i class="fas fa-gem"></i><h3>Luxury Travelers</h3><p>Exclusive experiences with personalized service.</p></div>
+        <div class="client-card"><i class="fas fa-users"></i><h3>Families</h3><p>Stress-free travel planning for your entire family.</p></div>
+        <div class="client-card"><i class="fas fa-wallet"></i><h3>Budget Travelers</h3><p>Affordable travel without compromising reliability.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why">
+    <div class="container">
+      <h2 class="section-title">Why Choose Luminaries Group</h2>
+      <div class="why-grid">
+        <div class="why-card"><i class="fas fa-clock"></i><h3>24/7 Support</h3><p>Our team is available anytime to assist you.</p></div>
+        <div class="why-card"><i class="fas fa-hand-holding-heart"></i><h3>Trusted Partner</h3><p>Reliable service with strong customer satisfaction.</p></div>
+        <div class="why-card"><i class="fas fa-globe"></i><h3>Global Reach</h3><p>Serving travelers worldwide with international expertise.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to Travel with Confidence?</h2>
+      <p>Let our experts handle your travel arrangements.</p>
+      <a class="btn-primary" href="https://wa.me/2348110453325">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="container footer-grid">
+      <div>
+        <h3>Luminaries Group</h3>
+        <p>Professional flight logistics and airport protocol services.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul><li>Flight Booking</li><li>Protocol Services</li><li>Meet & Assist</li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>+234 811 045 3325</p>
+        <p>+234 906 578 9441</p>
+        <p>luminariesgroupltd@gmail.com</p>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Luminaries Group Flight Logistics</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
