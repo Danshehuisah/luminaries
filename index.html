@@ -11,12 +11,33 @@
 </head>
 <body>
 
-  <!-- STICKY WHATSAPP ICON (replaced call) – link to your WhatsApp -->
-  <a href="https://wa.me/2348110453325" target="_blank" class="sticky-wa" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 24 24" width="36" height="36">
-      <path d="M19.077 4.928C17.191 3.041 14.683 2 12.006 2 6.798 2 2.548 6.193 2.54 11.393c-.003 1.747.456 3.457 1.328 4.985L2.25 21.75l5.4-1.575c1.494.82 3.179 1.255 4.896 1.256h.004c5.199 0 9.454-4.195 9.462-9.396.004-2.51-.971-4.87-2.857-6.757zM12.006 20.237h-.003c-1.52 0-3.01-.41-4.314-1.186l-.31-.185-3.203.934.998-3.122-.201-.321a8.183 8.183 0 0 1-1.36-4.537c.007-4.526 3.688-8.207 8.22-8.207 2.19 0 4.25.855 5.8 2.406 1.548 1.55 2.4 3.61 2.397 5.8-.008 4.523-3.689 8.204-8.214 8.204zm4.503-6.133c-.247-.124-1.46-.72-1.686-.803-.226-.082-.39-.124-.554.124-.165.247-.636.803-.78.967-.143.165-.286.186-.533.062-.888-.414-1.676-.922-2.33-1.52-.175-.16-.333-.334-.486-.514-.26-.304-.497-.627-.705-.965-.124-.2-.013-.308.093-.414.096-.096.21-.226.315-.34.124-.124.165-.206.247-.34.083-.135.042-.248-.021-.382-.062-.135-.554-1.33-.76-1.822-.2-.482-.402-.416-.554-.424-.144-.007-.308-.01-.472-.01-.165 0-.433.062-.66.31-.226.248-.865.846-.865 2.064 0 1.218.886 2.394 1.01 2.56.124.165 1.71 2.614 4.144 3.586.58.23 1.032.37 1.385.474.583.172 1.113.148 1.533.09.468-.064 1.44-.588 1.643-1.156.203-.568.203-1.054.142-1.156-.062-.103-.226-.165-.473-.29z"/>
-    </svg>
-  </a>
+  <!-- STICKY ICON  -->
+  <!-- FLOATING CONTACT BUTTON -->
+<div class="fab-container">
+
+  <!-- MAIN BUTTON -->
+  <button class="fab-main" id="fabMain">
+    <i class="fas fa-comment-dots" id="fabIcon"></i>
+  </button>
+
+  <!-- OPTIONS -->
+  <div class="fab-options" id="fabOptions">
+
+    <a href="tel:+2348110453325" class="fab-item call">
+      <i class="fas fa-phone"></i>
+    </a>
+
+    <a href="https://wa.me/2348110453325" target="_blank" class="fab-item whatsapp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="mailto:luminariesgroupltd@gmail.com" class="fab-item email">
+      <i class="fas fa-envelope"></i>
+    </a>
+
+  </div>
+
+</div>
 
   <!-- NAVBAR with clear logo placeholder (img tag) -->
   <header class="navbar">
@@ -62,7 +83,7 @@
 
       <div class="hero-buttons" id="hero-buttons">
         <a class="btn-primary" href="https://wa.me/2348110453325">Contact Us</a>
-        <a class="btn-outline" href="#services">Explore Services</a>
+        <!-- <a class="btn-outline" href="#services">Explore Services</a> -->
         
       </div>
     </div>
@@ -92,6 +113,25 @@
         <div class="client-card"><i class="fas fa-gem"></i><h3>Luxury Travelers</h3><p>Exclusive experiences with personalized service.</p></div>
         <div class="client-card"><i class="fas fa-users"></i><h3>Families</h3><p>Stress-free travel planning for your entire family.</p></div>
         <div class="client-card"><i class="fas fa-wallet"></i><h3>Budget Travelers</h3><p>Affordable travel without compromising reliability.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-cards">
+      <div class="card">
+        <p>"I have never enjoyed a swift flight service as the one rendered by you guys. I love your professionalism!"</p>
+        <h4>- Samuel John, Abuja</h4>
+      </div>
+      <div class="card">
+        <p>"Their professionalism and real time update is top notch. Well done luminaries"</p>
+        <h4>- Rabiu Musa, Kano</h4>
+      </div>
+      <div class="card">
+        <p>"I love your team. For the first time, I was saved from the tedious long flight processes"</p>
+        <h4>- Godwin Mercy, Abuja</h4>
       </div>
     </div>
   </section>

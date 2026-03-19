@@ -65,33 +65,92 @@
     }
     .btn-outline:hover { background: var(--highlight); color: white; }
 
-    /* ===== STICKY WHATSAPP ICON (replaced call svg) ===== */
-    .sticky-wa {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      background: var(--highlight);
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-      z-index: 9999;
-      transition: 0.25s ease;
-      border: 3px solid white;
-    }
-    .sticky-wa:hover {
-      background: #128C7E;
-      transform: scale(1.1) rotate(3deg);
-    }
-    .sticky-wa svg {
-      width: 36px;
-      height: 36px;
-      fill: white;
+    /* ===== STICKY ICON ===== */
+    /* ===== FLOATING CONTACT FAB ===== */
 
-    }
+.fab-container{
+  position:fixed;
+  bottom:24px;
+  right:24px;
+  z-index:9999;
+}
+
+/* MAIN BUTTON */
+.fab-main{
+  width:65px;
+  height:65px;
+  border-radius:50%;
+  background:var(--highlight);
+  border:none;
+  color:white;
+  font-size:24px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+  transition:0.3s ease;
+}
+
+.fab-main:hover{
+  transform:scale(1.08);
+}
+
+/* ROTATE + CHANGE ICON STATE */
+.fab-main.active{
+  transform:rotate(180deg);
+}
+
+/* OPTIONS CONTAINER */
+.fab-options{
+  position:absolute;
+  bottom:80px;
+  right:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:12px;
+  pointer-events:none;
+}
+
+/* INDIVIDUAL ICONS */
+.fab-item{
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+  transform:scale(0);
+  opacity:0;
+  transition:0.3s ease;
+}
+
+/* COLORS */
+.fab-item.call{ background:#1F5B3A; }
+.fab-item.whatsapp{ background:#25D366; }
+.fab-item.email{ background:#C89F3C; }
+
+/* SHOW STATE */
+.fab-container.active .fab-item{
+  transform:scale(1);
+  opacity:1;
+  pointer-events:auto;
+}
+
+/* STAGGER EFFECT */
+.fab-container.active .fab-item:nth-child(1){
+  transition-delay:0.1s;
+}
+.fab-container.active .fab-item:nth-child(2){
+  transition-delay:0.2s;
+}
+.fab-container.active .fab-item:nth-child(3){
+  transition-delay:0.3s;
+}
 
     /* === NAVBAR (logo left, nav right) === */
     .navbar {
@@ -277,6 +336,41 @@
         gap: 1.5rem;
       }
     }
+
+    /* Testimonials */
+.testimonials {
+  padding: 4rem 1rem;
+  /* background: var(--white); */
+  background-color: #1f5b3a;
+  background-image: url(IMAGES/logo-upside-down.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.7rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.testimonial-cards .card {
+  /* background: #1a2b4c33; */
+  background-color: rgba(255, 255, 255, 0.63); 
+  padding: 2rem;
+  border-radius: 12px;
+  font-style: italic;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.testimonials h2 {
+  color: rgb(235, 232, 232);
+}
+.testimonial-cards .card h4 {
+  color: #a7822c;
+}
+
+
 
 
     @media (max-width: 700px) {

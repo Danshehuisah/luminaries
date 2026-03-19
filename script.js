@@ -125,3 +125,40 @@ function animateHero(){
 preloadImages();
 animateHero();
 setInterval(animateHero, 6500);
+
+// FLOATING FAB LOGIC
+
+const fabMain = document.getElementById("fabMain");
+const fabContainer = document.querySelector(".fab-container");
+const fabIcon = document.getElementById("fabIcon");
+
+if(fabMain){
+
+  fabMain.addEventListener("click", function(e){
+    e.stopPropagation();
+
+    fabContainer.classList.toggle("active");
+    fabMain.classList.toggle("active");
+
+    // Change icon
+    if(fabContainer.classList.contains("active")){
+      fabIcon.classList.remove("fa-comment-dots");
+      fabIcon.classList.add("fa-times");
+    }else{
+      fabIcon.classList.add("fa-comment-dots");
+      fabIcon.classList.remove("fa-times");
+    }
+  });
+
+  // Close when clicking outside
+  document.addEventListener("click", function(e){
+    if(!fabContainer.contains(e.target)){
+      fabContainer.classList.remove("active");
+      fabMain.classList.remove("active");
+
+      fabIcon.classList.add("fa-comment-dots");
+      fabIcon.classList.remove("fa-times");
+    }
+  });
+
+}
