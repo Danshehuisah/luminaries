@@ -342,7 +342,7 @@
   padding: 4rem 1rem;
   /* background: var(--white); */
   background-color: #1f5b3a;
-  background-image: url(IMAGES/logo-upside-down.jpg);
+  /* background-image: url(IMAGES/logo-upside-down.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
@@ -358,16 +358,19 @@
 .testimonial-cards .card {
   /* background: #1a2b4c33; */
   background-color: rgba(255, 255, 255, 0.63); 
+  /* color: white; */
   padding: 2rem;
   border-radius: 12px;
   font-style: italic;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-.testimonials h2 {
-  color: rgb(235, 232, 232);
+.testimonials h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 2rem 1rem;
 }
 .testimonial-cards .card h4 {
-  color: #a7822c;
+  color: #c79624;
 }
 
 

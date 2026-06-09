@@ -48,19 +48,19 @@ const buttons = document.getElementById("hero-buttons");
 // SLIDES DATA
 const slides = [
 {
-image: "images/flight-attendant.png",
+image: "images/hero1.webp",
 title: "Your Journey, Our Expertise",
 text: "Experience seamless travel with Luminaries Group. From booking to arrival, we handle everything.",
 animateButtons: true
 },
 {
-image: "images/attendant.png",
+image: "images/hero2.webp",
 title: "Luxury Travel, Simplified",
 text: "Enjoy premium services with comfort, speed, and professionalism at every step.",
 animateButtons: false
 },
 {
-image: "images/jumbo-jet-flying-sky.jpg",
+image: "images/hero3.webp",
 title: "Global Travel Made Easy",
 text: "We connect you to the world with reliable and efficient flight logistics.",
 animateButtons: false
